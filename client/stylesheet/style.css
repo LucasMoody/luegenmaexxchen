@@ -1,0 +1,18 @@
+.dices {
+   margin: 0 auto 1em;
+}
+
+.dices  img {
+   width: 10%;
+   height: 10%;
+   margin-right: 0.5em;
+}
+
+.dices  img:last-child {
+   margin-right: 0;
+}
+
+.announcement {
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
