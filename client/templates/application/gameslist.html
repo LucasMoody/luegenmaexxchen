@@ -1,0 +1,13 @@
+<template name="gamesList">
+	<div class="games">
+		<button class="btn new-game">Neues Spiel</button>
+	<h3>
+		Game List
+	</h3>
+	<ol>
+		{{#each games}}
+			<li><a href="{{pathFor 'game'}}">{{_id}}</a></li>
+		{{/each}}
+	</ol>
+	</div>
+</template>
