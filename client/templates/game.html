@@ -5,49 +5,29 @@
 		<div class="col-md-12">
 			<div class="page-header">
 				<div class="alert alert-success">
-  					<strong>Success! Player Length:{{players.length}} Announcments</strong> Indicates a successful or positive action.
+  					<strong>Success! </strong> Indicates a successful or positive action.
 				</div>
+				{{> messages}}
 			</div>
 			<div class="row">
 				<div class="col-md-8">
-					<h3 class="text-info text-center">
-						Dicethrow Anouncement
-					</h3>
-					<dl>
-						Zahlenanzeige
-					</dl>
+					<div class="col-md-12">
+						{{> dices}}
+					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<button type="button" class="btn btn-block btn-success">
-								Trust and throw the dices!
-							</button> 
-							<button type="button" class="btn btn-block btn-danger">
-								This is a lie!
-							</button>
-
-							<button type="button" class="btn btn-block btn-danger">
-								Send this dice announcement!
-							</button>
+							{{> buttons_decision}}
+							{{> buttons_send_ann}}
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
+							{{> chat}}
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<ol>
-						<li>
-							Players
-						</li>
-						<!--
-						{{#each user}}
-							<li>
-								{{> user.name}}
-							</li>
-						{{/each}}
-						-->
-					</ol>
+					{{> player_list}}
 				</div>
 			</div>
 		</div>
