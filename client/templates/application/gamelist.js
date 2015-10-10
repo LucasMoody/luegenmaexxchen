@@ -10,3 +10,9 @@ Template.gamesList.events({
 		Router.go('/game/'+newGame);
 	}
 });
+
+Template.gamesList.helpers({
+	'games' : function() {
+		return Games.find();
+	}
+});
