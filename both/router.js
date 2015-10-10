@@ -6,7 +6,7 @@ Router.configure({
 });
 
 Router.route('/', {name: 'gamesList'});
-
+Router.route('/newgame/', {name: 'newGame'});
 Router.route('/game/:_id', {
 	name: 'game',
 	data: function() {return Games.findOne(this.params._id);}
