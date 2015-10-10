@@ -1,7 +1,11 @@
 <template name="game">
+	{{>userinput}}
 	<div class="row">
 		<div class="col-md-12">
 			<div class="page-header">
+				<div class="alert alert-success">
+  					<strong>Success! </strong> Indicates a successful or positive action.
+				</div>
 				{{> messages}}
 			</div>
 			<div class="row">
