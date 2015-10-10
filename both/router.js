@@ -6,8 +6,14 @@ Router.configure({
 });
 
 Router.route('/', {name: 'gamesList'});
+
 Router.route('/game/:_id', {
 	name: 'game',
 	data: function() {return Games.findOne(this.params._id);}
 });
 //Router.onBeforeAction('dataNotFound', {only: 'postPage'});
+
+Router.route('/test', {
+	name: 'test',
+	template: 'game'
+});
