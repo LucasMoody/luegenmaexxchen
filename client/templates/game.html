@@ -1,10 +1,11 @@
 <template name="game">
 <div class="container-fluid">
+	{{>userinput}}
 	<div class="row">
 		<div class="col-md-12">
 			<div class="page-header">
 				<div class="alert alert-success">
-  					<strong>Success!</strong> Indicates a successful or positive action.
+  					<strong>Success! Player Length:{{players.length}} Announcments</strong> Indicates a successful or positive action.
 				</div>
 			</div>
 			<div class="row">
