@@ -1,4 +1,14 @@
-<template name="dices">
+<template name="dices_ann">
+   <h3>Current Announcement</h3>
+   <div class="dices">
+      {{#each number}}
+         <img src="/img/dice_{{this}}.svg" class="dice{{this}}"/>
+      {{/each}}
+   </div>
+</template>
+
+<template name="dices_throw">
+   <h3>Your dice throw</h3>
    <div class="dices">
       {{#each number}}
          <img src="/img/dice_{{this}}.svg" class="dice{{this}}"/>
