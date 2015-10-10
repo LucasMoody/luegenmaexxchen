@@ -1,3 +1,3 @@
 Template.dices.helpers({
-   number: 1
+   number: Games.findOne({})['curAnnouncement'].toString().split("")
 });

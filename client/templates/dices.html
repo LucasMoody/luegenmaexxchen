@@ -1,6 +1,7 @@
 <template name="dices">
    <div class="dices">
-      <img src="dice_{{number}}.svg" class="dice left_dice"/>
-      <img src="dice_{{number}}.svg" class="dice right_dice"/>
+      {{#each number}}
+         <img src="/img/dice_{{this}}.svg" class="dice{{this}}"/>
+      {{/each}}
    </div>
 </template>
