@@ -7,7 +7,7 @@ Template.gamesList.events({
 			curDiceThrow: 0
 		});
 		console.log(newGame);
-		Router.go('/game/'+newGame);
+		Router.go('/'+newGame);
 	}
 });
 
