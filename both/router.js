@@ -13,7 +13,8 @@ Router.route('/:_id', {
 	name: 'game',
     template: 'game',
     data: function(){
-        var currentList = this.params._id;
-        return Games.findOne({ _id: currentList });
-    }
+    	console.log('Router.js');
+    	console.log(this.params._id);
+        return Games.findOne(this.params._id);
+	}
 });

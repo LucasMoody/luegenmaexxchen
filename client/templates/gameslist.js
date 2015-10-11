@@ -3,6 +3,7 @@ Template.gamesList.events({
 		evt.preventDefault();
 		var newGame = Games.insert({
 			players: [],
+			curPlayer: '',
 			curAnnouncement: 0,
 			curDiceThrow: 0
 		});
