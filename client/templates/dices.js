@@ -1,6 +1,6 @@
 diceDep = new Tracker.Dependency();
-dice1 = 0;
-dice2 = 0;
+dice1 = 2;
+dice2 = 4;
 
 Template.dices_ann.helpers({
    number: function() {
