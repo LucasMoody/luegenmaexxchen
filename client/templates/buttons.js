@@ -1,4 +1,4 @@
-combinations = [[2,3], [2,4], [2,5], [2,6], [3,1], [3,2], [3,4], [3,5], [3,6], [4,1], [4,2], [4,3], [4,5], [4,6], [5,1], [5,2], [5,3], [5,4], [6,1], [6,2], [6,3], [6,4], [6,5], [1,1], [2,2], [3,3], [4,4], [5,5], [6,6], [2,1]];
+combinations = [[3,1], [3,2], [4,1], [4,2], [4,3], [5,1], [5,2], [5,3], [5,4], [6,1], [6,2], [6,3], [6,4], [6,5], [1,1], [2,2], [3,3], [4,4], [5,5], [6,6], [2,1]];
 curIndex = 0;
 
 Template.buttons_send_ann.events({
@@ -8,7 +8,7 @@ Template.buttons_send_ann.events({
 	},
    'click #btn_plus': function(evt, template) {
 		evt.preventDefault();
-      if (curIndex < 29)
+      if (curIndex < 20)
          curIndex++;
       updateThrowDices();
 	},
@@ -35,7 +35,7 @@ Template.buttons_decision.events({
             clearInterval(intervalId);
          }
          remainingIntervals--;
-         curIndex = Math.floor(Math.random() * 29);
+         curIndex = Math.floor(Math.random() * 20);
          updateThrowDices();
          }, 80)
 	}
