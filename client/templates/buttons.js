@@ -4,7 +4,7 @@ curIndex = 0;
 Template.buttons_send_ann.events({
 	'click #btn_send_ann': function(evt, template) {
 		evt.preventDefault();
-      Games.update(this._id, {$set:{curAnnouncement:dice1*10 + dice2}});
+      Games.update(this._id, {$set:{curAnnouncement:dice1 * 20 + dice2}});
 	},
    'click #btn_plus': function(evt, template) {
 		evt.preventDefault();
@@ -29,6 +29,10 @@ function updateThrowDices() {
 Template.buttons_decision.events({
 	'click #btn_throw_dice': function(evt, template) {
 		evt.preventDefault();
+      var elements = document.getElementsByClassName('throw');
+      for (var i = 0; i < elements.length; i++) {
+            elements[i].style.display = 'block';
+      }
       var remainingIntervals = 10;
       var intervalId = setInterval(function(){
          if (remainingIntervals == 0) {
