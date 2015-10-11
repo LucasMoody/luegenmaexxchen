@@ -5,18 +5,23 @@
 			<div class="page-header">
 				{{> messages}}
 			</div>
-			<div class="row">
-				<div class="col-md-8">
-               {{> dices_ann}}
-               {{> buttons_decision}}
-               {{> dices_throw}}
-					{{> buttons_send_ann}}
-					<div class="row">
-						<div class="col-md-12">
-							{{> chat}}
-						</div>
+				<div class="row">
+					<div class="col-md-8">
+						{{#if showPlayerInput}}
+							{{> userinput}}
+						{{else}}
+			               	{{> dices_ann}}
+			               	{{> buttons_decision}}
+			               	{{> dices_throw}}
+							{{> buttons_send_ann}}
+							<div class="row">
+								<div class="col-md-12">
+									{{> chat}}
+								</div>
+							</div>
+
+						{{/if}}
 					</div>
-				</div>
 				<div class="col-md-4">
 					{{> player_list}}
 				</div>
