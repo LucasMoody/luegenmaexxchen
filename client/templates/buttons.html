@@ -1,17 +1,35 @@
 <template name="buttons_decision">
-	<button id="btn_throw_dice" type="button" class="btn btn-block btn-success">
-		Trust and throw the dices!
-	</button> 
-	<button type="button" class="btn btn-block btn-danger">
-		This is a lie!
-	</button>
+   <div class="row">
+      <div class="col-md-4">
+         <button id="btn_throw_dice" type="button" class="btn btn-block btn-success">
+            Trust and throw the dices!
+         </button>
+      </div>
+      <div class="col-md-4">
+         <button type="button" class="btn btn-block btn-danger">
+            This is a lie!
+         </button>
+      </div>
+   </div>
 </template>
 
 <template name="buttons_send_ann">
-   <div class="announcement">
-      Number: <input id="input_send_ann" type="text" name="fname"><br>
+   <div class="row">
+		<!--
+      <div class="col-md-4">
+         Number: <input id="input_send_ann" type="text" name="fname">
+      </div>
+      -->
+      <div class="col-md-1 col-btn-plus">
+         <button id="btn_plus" type="button" class="btn btn-block">+</button>
+      </div>
+      <div class="col-md-1 col-btn-minus">
+         <button id="btn_minus" type="button" class="btn btn-block">-</button>
+      </div>
+      <div class="col-md-4">
+         <button id="btn_send_ann" type="button" class="btn btn-block btn-danger">
+            Send this dice announcement!
+         </button>
+      </div>
    </div>
-   <button id="btn_send_ann" type="button" class="btn btn-block btn-danger">
-      Send this dice announcement!
-   </button>
 </template>

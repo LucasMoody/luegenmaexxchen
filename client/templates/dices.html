@@ -1,17 +1,25 @@
 <template name="dices_ann">
-   <h3>Current Announcement</h3>
-   <div class="dices">
-      {{#each number}}
-         <img src="/img/dice_{{this}}.svg" class="dice{{this}}"/>
-      {{/each}}
-   </div>
+   <div class="row">
+      <div class="col-md-8 announcement">
+         <h3>Current Announcement</h3>
+         <div class="dices">
+            {{#each number}}
+               <img src="/img/dice_{{this}}.svg" class="dice{{this}}"/>
+            {{/each}}
+         </div>
+      </div>
+	</div>
 </template>
 
 <template name="dices_throw">
-   <h3>Your dice throw</h3>
-   <div class="dices">
-      {{#each number}}
-         <img src="/img/dice_{{this}}.svg" class="dice{{this}}"/>
-      {{/each}}
+   <div class="row">
+      <div class="col-md-8 throw">
+         <h3>Your dice throw</h3>
+         <div class="dices">
+            {{#each number}}
+               <img src="/img/dice_{{this}}.svg" class="dice{{this}}"/>
+            {{/each}}
+         </div>
+      </div>
    </div>
 </template>
